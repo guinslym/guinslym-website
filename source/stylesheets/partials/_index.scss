@@ -1,0 +1,25 @@
+section.home {
+  
+  width: 100%;
+  height: 400px;
+
+  @include media($large-screen) {
+    width: 100%;
+    height: 100%;
+    //margin-bottom: -135px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: em(40); 
+    @include media($large-screen) {
+      font-size: 2.25em;
+      margin-top: 180px;
+      padding-top: 0;
+    }
+  }
+
+
+}
+

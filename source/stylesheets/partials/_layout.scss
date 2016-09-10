@@ -1,0 +1,37 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+section {
+  @include outer-container;
+}
+
+
+// Flash Messages
+
+div.message {
+  @include outer-container;
+  p { 
+    @include span-columns(12);
+
+    &.flash-error {
+      @extend %flash-error;
+    }
+
+    &.flash-success {
+      @extend %flash-success;
+    }
+  }
+}
+
+.error {
+  @extend %flash-error;
+}
+
